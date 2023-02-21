@@ -1,6 +1,10 @@
+const defaultConfig = require("not-idea-ui/tailwind.config.cjs");
+
 module.exports = {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+    tailwindcss: {
+      config: defaultConfig
+    },
+    autoprefixer: {}
+  }
+};

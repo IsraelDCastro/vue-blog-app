@@ -1,9 +1,10 @@
 import "./main.scss";
 
-import { createApp } from 'vue';
-import Home from "../components/views/Home.vue";
+import { createApp } from "vue";
+import Blogs from "../components/views/Blogs.vue";
 
-if (document.querySelector('#home')) {
-  const home = createApp(Home);
-  home.mount('#home');
+const blogsElement = document.querySelector("#blogs");
+if (blogsElement) {
+  const blog = createApp(Blogs);
+  blog.mount(blogsElement);
 }
